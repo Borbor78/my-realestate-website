@@ -1,0 +1,142 @@
+/* reset and base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+}
+
+/*hero section*/
+#hero{
+    background: url(c:\Users\User\Desktop\hero.jpg\picture.hero.jpg.jpeg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+#hero .overlay{
+    background: rgba(0,0,0,0.6);
+    padding: 2rem;
+    width: 100%;
+}
+#hero h1{
+    font-size: 3rem;
+}
+#hero p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.cta-btn{
+    background: #0e4d92;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cta-btn:hover{
+    background: #092d59;
+}
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #0e4d92;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color: #ffd700;
+}
+/* sections */
+section{
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+/* card*/
+.cards{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 1rem;
+margin-top: 1rem;
+}
+.card{
+    background: #f0f0f0;
+    padding: 1.5rem;
+    border-left: 5px solid #0e4d92;
+    border-radius: 5px;
+}
+.portfolio-item img{
+    width: 100%;
+    display: block;
+}
+.overlay-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+}
+/* contact form */
+form{
+    display:flex;
+    flex-direction: column;
+}
+form input, form textarea{
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button{
+    background: #0e4d92;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+form button:hover{
+    background: #092d59;
+}
+/*social link*/
+.social-link{
+    margin-top: 1rem;
+    text-align: center;
+}
+.social-link a{
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #0e4d92;
+}
+footer{
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 1rem;
+}
